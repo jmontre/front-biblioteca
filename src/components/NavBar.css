@@ -1,0 +1,35 @@
+body {
+    color: white;
+}
+
+.navbar-main {
+    padding: 20px;
+    background-color: rgb(23, 23, 49);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-navegation {
+    display: flex;
+    gap: 20px;
+    margin: auto 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(23, 23, 49);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+strong {
+    color: rgb(220, 96, 87);
+}
+a:hover {
+    color: white;
+    background-color: rgb(220, 96, 87);
+    transform: scale(1.2)
+}
