@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/Home/index.jsx";
-import "./App.css";
 import { CategoryPage } from "./pages/Category/index.jsx";
 import { ProductPage } from "./pages/Product/index.jsx";
 import { LoginPage } from "./pages/Login/index.jsx";
@@ -8,15 +7,15 @@ import { RootPage } from "./pages/Root/index.jsx";
 
 const routes = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <RootPage />,
-    children:[
+    children: [
       { path: "/", element: <HomePage /> },
       { path: "/category", element: <CategoryPage /> },
       { path: "/product", element: <ProductPage /> },
-      { path: "/login", element: <LoginPage /> }
-    ]
-  }
+      { path: "/login", element: <LoginPage /> },
+    ],
+  },
 ]);
 
 function App() {

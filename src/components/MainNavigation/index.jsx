@@ -5,24 +5,44 @@ export const MainNavigation = () => {
     <>
       <div className="flex flex-row justify-between bg-blue-950">
         <div className="justify-center p-10">
-          <h1 className="text-3xl text-white">
+          <h1 className="text-5xl text-white ml-10">
             Book<strong className="text-red-600">Hub</strong>
           </h1>
         </div>
 
-        <div className="flex items-center mr-10">
+        <div className="flex items-center mr-20">
           <ul className="flex flex-row gap-5">
-            <li className="p-4 bg-white rounded-2xl">
-              <NavLink to={"/"}>Home</NavLink>
+            <li className="">
+              <NavLink
+                className="p-3 bg-white rounded-2xl flex items-center"
+                to={"/"}
+              >
+                Home
+              </NavLink>
             </li>
-            <li className="p-4 bg-white rounded-2xl">
-              <NavLink to={"/category"}>Category</NavLink>
+            <li>
+              <NavLink
+                className="p-3 bg-white rounded-2xl flex items-center"
+                to={"/category"}
+              >
+                Category
+              </NavLink>
             </li>
-            <li className="p-4 bg-white rounded-2xl">
-              <NavLink to={"/product"}>Product</NavLink>
+            <li className="">
+              <NavLink
+                className="p-3 bg-white rounded-2xl flex items-center"
+                to={"/product"}
+              >
+                Product
+              </NavLink>
             </li>
-            <li className="p-4 bg-white rounded-2xl">
-              <NavLink to={"/login"}>Login</NavLink>
+            <li className="">
+              <NavLink
+                className="p-3 bg-white rounded-2xl flex items-center"
+                to={"/login"}
+              >
+                Login
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -30,4 +50,3 @@ export const MainNavigation = () => {
     </>
   );
 };
-
