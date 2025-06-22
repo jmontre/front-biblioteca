@@ -9,7 +9,7 @@ export const Dropdown = () => {
   };`;
 
   return (
-    <div className="relative">
+    <div className="relative transition-transform duration-200 ease-in-out hover:scale-103">
       <select
         name="Dropdown"
         id=""
@@ -24,7 +24,7 @@ export const Dropdown = () => {
       <img
         src={DropdownIcon}
         alt=""
-        className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4"
+        className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 "
       />
     </div>
   );

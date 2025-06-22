@@ -14,7 +14,7 @@ export const MainNavigation = () => {
           <ul className="flex flex-row gap-5">
             <li className="">
               <NavLink
-                className="p-3 bg-white rounded-2xl flex items-center"
+                className="p-3 bg-white rounded-2xl flex items-center transition-transform duration-200 ease-in-out hover:scale-125 hover:text-white hover:bg-red-700"
                 to={"/"}
               >
                 Home
@@ -22,7 +22,7 @@ export const MainNavigation = () => {
             </li>
             <li>
               <NavLink
-                className="p-3 bg-white rounded-2xl flex items-center"
+                className="p-3 bg-white rounded-2xl flex items-center transition-transform duration-200 ease-in-out hover:scale-125 hover:text-white hover:bg-red-700"
                 to={"/category"}
               >
                 Category
@@ -30,7 +30,7 @@ export const MainNavigation = () => {
             </li>
             <li className="">
               <NavLink
-                className="p-3 bg-white rounded-2xl flex items-center"
+                className="p-3 bg-white rounded-2xl flex items-center transition-transform duration-200 ease-in-out hover:scale-125 hover:text-white hover:bg-red-700"
                 to={"/product"}
               >
                 Product
@@ -38,7 +38,7 @@ export const MainNavigation = () => {
             </li>
             <li className="">
               <NavLink
-                className="p-3 bg-white rounded-2xl flex items-center"
+                className="p-3 bg-white rounded-2xl flex items-center transition-transform duration-200 ease-in-out hover:scale-125 hover:text-white hover:bg-red-700"
                 to={"/login"}
               >
                 Login
