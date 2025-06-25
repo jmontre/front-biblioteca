@@ -4,7 +4,9 @@ import { useEffect } from "react";
 import { getBooksById } from "../Product/Services/BookServices";
 import { CardComponent } from "../../components/Card";
 
-export const ProductPage = ({ id = [1, 2, 3, 4, 5, 6] }) => {
+const defaultsId = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+export const ProductPage = ({ id = defaultsId }) => {
   const [books, setBooks] = useState(null);
 
   useEffect(() => {
@@ -19,16 +21,19 @@ export const ProductPage = ({ id = [1, 2, 3, 4, 5, 6] }) => {
     fetchBooks();
   }, [id]);
 
+  console.log("ProductPage renderizado");
+
   if (!books) return <p>Cargando...</p>;
   return (
     <>
-      <div className="flex flex-wrap justify-start gap-5">
+      <div className="flex flex-wrap justify-center gap-5 mr-20 sm:flex-row sm:mr-10">
         {books.map((book) => (
           <CardComponent
             key={book.id}
             titleBook={book.name}
             descriptioBook={book.species}
             imageBook={book.image}
+            categoryBook={book.status}
           />
         ))}
       </div>
