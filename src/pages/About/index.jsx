@@ -17,7 +17,7 @@ const students = [
   }
   ,{
     name: "Repositorio Backend",
-    github: "https://github.com/Andrewx1414/backendproyecto"
+    github: "https://github.com/Andrewx1414/BackendDesarrolloweb"
   }
 ];
 
